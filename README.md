@@ -10,7 +10,7 @@
 3.创建podspec文件
 使用终端进入到工程文件的目录中，在README.md文件所在的位置创建一个podspec 文件，使用pod spec create repositoryDemo
 
-4.编辑podspec文件
+4.编辑podspec文件\n
 spec.name         = "WriteBoard"    #存储库名称
 spec.version      = "0.0.1"      #版本号，与tag值一致
 spec.summary      = "a repository demo"  #简介
