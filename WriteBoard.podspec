@@ -15,19 +15,19 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "WriteBoard"
-  spec.version      = "0.0.1"
-  spec.swift_version = '4.0'
-  spec.summary      = "This is an automatic input box, which can automatically adjust its height according to the input box."
+  spec.name         = "WriteBoard"  #存储库名称
+  spec.version      = "0.0.1"   #版本号，与tag值一致
+  spec.swift_version = '5.0' #如果是swift项目需要指定使用的swift版本
+  spec.summary      = "This is an automatic input box, which can automatically adjust its height according to the input box." #简介
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  spec.description  = "This is an auto message input box sealed by myself. The function of this input box is perfect. You can download this library and put it directly on the view. The input box will automatically adjust its height according to the height of the keyboard"
+  spec.description  = "This is an auto message input box sealed by myself. The function of this input box is perfect. You can download this library and put it directly on the view. The input box will automatically adjust its height according to the height of the keyboard" #描述
 
-  spec.homepage     = "https://github.com/DioSpace/WriteBoard"
+  spec.homepage     = "https://github.com/DioSpace/WriteBoard"  #项目主页，不是git地址
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -39,7 +39,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.license      = "MIT (example)"
-  spec.license      = { :type => "MIT", :file => "LICENSE" }
+  spec.license      = { :type => "MIT", :file => "LICENSE" }    #开源协议
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -52,7 +52,7 @@ Pod::Spec.new do |spec|
   #  profile URL.
   #
 
-  spec.author             = { "Dio" => "zhendong2011@live.cn" }
+  spec.author             = { "Dio" => "zhendong2011@live.cn" } #作者
   # Or just: spec.author    = "Dio"
   # spec.authors            = { "Dio" => "zhendong2011@live.cn" }
   # spec.social_media_url   = "https://twitter.com/Dio"
@@ -64,7 +64,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.platform     = :ios
-  spec.platform     = :ios, "11.0"
+  spec.platform     = :ios, "11.0"   #支持的平台和版本号
 
   #  When using multiple platforms
   # spec.ios.deployment_target = "5.0"
@@ -79,7 +79,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/DioSpace/WriteBoard.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/DioSpace/WriteBoard.git", :tag => "#{spec.version}" }   #存储库的git地址，以及tag值
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -90,7 +90,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "WriteBoard/writeboard/*.{swift,h,m}"
+  spec.source_files  = "WriteBoard/writeboard/*.{swift,h,m}"    #需要托管的源代码路径
   spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
@@ -129,9 +129,9 @@ Pod::Spec.new do |spec|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  spec.requires_arc = true
+  spec.requires_arc = true  #是否支持ARC
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # spec.dependency "JSONKit", "~> 1.4"
+  # spec.dependency "JSONKit", "~> 1.4"      #所依赖的第三方库，没有就不用写
 
 end
