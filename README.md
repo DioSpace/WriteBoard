@@ -30,12 +30,9 @@ pod lib lint 时：
 s.source_files  = "MWBase/BaseModule/**/*.{h,m}"
 pod spec lint 时：
 s.source_files  = "WriteBoard/writeboard/*.{swift,h,m}"
+所以，在pod lib lint时，该s.source_files的描述为源码相对于podspec文件的相对路径，该描述正确；
+在pod spec lint 时，该s.source_files的描述应为源码相对于Git根目录的相对路径，该描述错误，所以报错。
 
-
-所以，在pod lib lint 时，该s.source_files的描述为源码相对于podspec文件的相对路径，该描述正确；在pod spec lint 时，该s.source_files的描述应为源码相对于Git根目录的相对路径，该描述错误，所以报错。
-————————————————
-版权声明：本文为CSDN博主「overstep1024」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
-原文链接：https://blog.csdn.net/overstep1024/article/details/84543770
 
 5.设置tag的值，并上传到GitHub上
 (1) git add * (将代码添加到暂存区)
